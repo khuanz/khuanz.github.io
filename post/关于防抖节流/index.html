@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://fypavilion.top/img/loading.gif">
 <meta property="og:image" content="https://fypavilion.top/img/loading.gif">
 <meta property="article:published_time" content="2020-06-30T14:24:17.000Z">
-<meta property="article:modified_time" content="2020-07-16T08:14:03.923Z">
+<meta property="article:modified_time" content="2020-07-16T08:26:41.407Z">
 <meta property="article:author" content="khz">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://fypavilion.top/img/loading.gif">
@@ -212,6 +212,9 @@
           
             
           <p>我们每天都有阅读文章的习惯，无论是在手机还是电脑上，我们所看到内容包括新闻、学习教程、以及各类杂七杂八的刊物，都可以认为是一篇文章。然而，有时候我们会遇到一个烦恼，当我们每一次关闭页面再次重新打开时，会发现文章回到了起点而无法记录到之前观看的位置，用过微信的都知道，我们在浏览订阅号文章时，会比较人性化的记录我们当前所阅读的位置，在我们不小心关闭又打开时，又定位到我们刚刚阅读的位置，这样不仅节约了重新滑动的时间，也避免了短暂性空白。</p>
+<a id="more"></a>
+
+
 <p>于是，便萌生了使用 TamperMonkey 脚本程序 运行 js 程序 来记录我们当前网页的浏览位置。<br>为了获取浏览的位置，我们需要为 scroll 事件添加监听事件<br>ddEventListener()与 removeEventListener()用于处理指定和删除事件处理程序操作。<br>它们都接受 3 个参数：如 addEventListener(“事件名” , “事件处理函数” , “布尔值”); (注：事件名不含”on”,如“click”)</p>
 <p>然后在事件函数中获取 scrollTop 值以及储存 scrollTop 便于下次定位（此处储存在 localStorage）<br>由于存在兼容性问题，在拿到 scrollTop 的值的时候需要考虑各种情况。网上也有各种解决方案</p>
 <blockquote>
